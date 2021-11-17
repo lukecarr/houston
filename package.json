@@ -26,10 +26,10 @@
   ],
   "scripts": {
     "build": "siroc build",
+    "changelog": "gitmoji-changelog",
     "lint": "yarn lint:eslint",
     "lint:eslint": "eslint --ext .ts --fix .",
-    "prepack": "yarn build",
-    "changelog": "gitmoji-changelog"
+    "prepack": "yarn build"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^7.0.2",
