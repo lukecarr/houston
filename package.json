@@ -30,17 +30,29 @@
     "lint": "yarn lint:eslint",
     "lint:eslint": "eslint --ext .ts --fix .",
     "prepack": "yarn build",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "jest"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ],
+    "preset": "ts-jest",
+    "testEnvironment": "node"
   },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@nuxtjs/eslint-config-typescript": "^7.0.2",
+    "@types/jest": "^27.0.2",
     "commitlint-config-gitmoji": "^2.2.5",
     "eslint": "^8.2.0",
     "gitmoji-changelog": "^2.2.1",
     "husky": "^7.0.4",
+    "jest": "^27.3.1",
     "lint-staged": "^12.0.2",
     "siroc": "^0.16.0",
+    "ts-jest": "^27.0.7",
     "typescript": "^4.4.4"
   }
 }
