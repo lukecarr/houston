@@ -3,7 +3,7 @@
 > RFC 7807 compliant errors for Node.js
 
 [![npm](https://img.shields.io/npm/v/moducate/houston)](https://npmjs.com/package/moducate/houston)
-[![Code Climate maintainability](https://img.shields.io/codeclimate/maintainabilitymoducate/houston)](https://codeclimate.com/github/moducate/houston)
+[![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/moducate/houston)](https://codeclimate.com/github/moducate/houston)
 [![npms.io (quality)](https://img.shields.io/npms-io/final-score/moducate/houston?label=npms.io%20score)](https://api.npms.io/v2/package/moducate/houston)
 [![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/@moducate/houston)](#)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/moducate/houston)](https://bundlephobia.com/package/moducate/houston)
