@@ -2,7 +2,7 @@
 
 > We have a [code of conduct](CODE_OF_CONDUCT.md). By interacting with this repository, you agree to abide by its terms.
 
-Hi! 👋 We’re excited that you’re using **Moducate** and we’d love to help.
+Hi! 👋 We’re excited that you’re using **Houston** (a Moducate OSS project) and we’d love to help.
 
 To help us help you, please read through the following guidelines.
 
