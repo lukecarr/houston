@@ -10,7 +10,7 @@
 [![npm bundle size](https://img.shields.io/bundlephobia/min/@moducate/houston)](https://bundlephobia.com/package/moducate/houston)
 
 - 📃 **Fully compliant.** Fully compliant with the [RFC 7807 specification](https://datatracker.ietf.org/doc/html/rfc7807).
-- 💡 **Lightweight.** Total bundle size comes in at [< 270B minified + gzipped](https://bundlephobia.com/package/moducate/houston).
+- 💡 **Lightweight.** Total bundle size comes in at [< 300B minified + gzipped](https://bundlephobia.com/package/moducate/houston).
 - 💪 **TypeScript.** Fully typed and self-documenting!
 
 ## 🚀 Quick Start
