@@ -4,9 +4,9 @@
 
 [![npm](https://img.shields.io/npm/v/moducate/houston)](https://npmjs.com/package/moducate/houston)
 [![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/moducate/houston)](https://codeclimate.com/github/moducate/houston)
-[![npms.io (quality)](https://img.shields.io/npms-io/final-score/moducate/houston?label=npms.io%20score)](https://api.npms.io/v2/package/moducate/houston)
+[![npms.io (score)](https://img.shields.io/npms-io/final-score/@moducate/houston)](https://api.npms.io/v2/package/%40moducate%2Fhouston)
 [![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/@moducate/houston)](#)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/moducate/houston)](https://bundlephobia.com/package/moducate/houston)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/@moducate/houston)](https://bundlephobia.com/package/moducate/houston)
 
 - 📃 **Fully compliant.** Fully compliant with the [RFC 7807 specification](https://datatracker.ietf.org/doc/html/rfc7807).
 - 💡 **Lightweight.** Total bundle size comes in at [< 270B minified + gzipped](https://bundlephobia.com/package/moducate/houston).
