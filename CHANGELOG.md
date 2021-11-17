@@ -1,5 +1,29 @@
 # Changelog
 
+<a name="0.2.0"></a>
+## 0.2.0 (2021-11-17)
+
+### Added
+
+- ✨ Added templating system [[a2a7af4](https://github.com/moducate/houston/commit/a2a7af41863f518de73e84a41f6d4c542c8ca587)]
+- ✅ Started work on unit-testing [[b5b8638](https://github.com/moducate/houston/commit/b5b8638a09299d22879fdfcdc3c84586860982d5)]
+- ✨ Added Next.js example code [[e67219f](https://github.com/moducate/houston/commit/e67219f91f5143c7929c997d488dd24960de66ca)]
+
+### Fixed
+
+- ✏️ Fixed typo in npm shields.io badge [[93ada21](https://github.com/moducate/houston/commit/93ada21c9d99428c52def3505001e735ab04d1c9)]
+
+### Miscellaneous
+
+- 📝 Added test coverage shields.io badge [[de75ff1](https://github.com/moducate/houston/commit/de75ff1ecf99c24778b49cea82a8478d7ab18459)]
+-  👷 Added CircleCI for testing [[1a8cc36](https://github.com/moducate/houston/commit/1a8cc3601ae5c0f7e54db3644788a3e1c80c82a4)]
+- 🔨 Added lint-staged [[9181689](https://github.com/moducate/houston/commit/91816896c180f1beb562bdb09a651552d6a4641d)]
+- 🔨 Added Husky + Commitlint [[1667643](https://github.com/moducate/houston/commit/16676436dbabc0beb75892445e17d98f12516d73)]
+- 📝 Added missing jsdocs [[137fbbc](https://github.com/moducate/houston/commit/137fbbc3e79daa7e7ba6ee45278c625e4259cb60)]
+- 📝 Fixed broken shields.io badges [[06ed90d](https://github.com/moducate/houston/commit/06ed90d20a425ac430ec239b94484bc6f6267e81)]
+- 📝 Added bundle size to README [[137b0c6](https://github.com/moducate/houston/commit/137b0c6e8170cb46ecaf94d2d741d0a5f40df1df)]
+
+
 <a name="0.1.0"></a>
 ## 0.1.0 (2021-11-17)
 
