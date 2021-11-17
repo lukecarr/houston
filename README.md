@@ -44,7 +44,22 @@ const { withError } = require("@moducate/houston");
 const app = require("express")();
 
 app.get("/not-found", (_, res) => {
-  return withError(res, { type: "https://example.com/not-found", status: 404 })
+  return withError(res, { type: "https://example.com/not-found", status: 404 });
+});
+```
+
+## 📄 Templates
+
+You can create error templates using the exported `withTemplate` function:
+
+```js
+const { withTemplate } = require("@moducate/houston");
+const app = require("express")();
+
+const withNotFound = withTemplate({ type: "https://example.com/not-found", status: 404 });
+
+app.get("/not-found", (_, res) => {
+  return withNotFound(res); // The second parameter is optional when using templates
 });
 ```
 

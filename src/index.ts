@@ -48,3 +48,15 @@ export function withError (res: ServerResponse, err: Partial<Error>): void {
   }
   return res.setHeader('Content-Type', mime).end(JSON.stringify(err))
 }
+
+/**
+ * Generates an RFC 7807 compliant error template which can be invoked to
+ * make errors with common values.
+ *
+ * @param template The template's values.
+ * @returns A `withError` function which can be invoked to apply the error
+ * template to a `http.ServerResponse` object.
+ */
+export function withTemplate (template: Partial<Error>): (res: ServerResponse, err?: Partial<Error>) => void {
+  return (res, err) => withError(res, { ...template, ...err })
+}
