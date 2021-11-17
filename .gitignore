@@ -97,5 +97,11 @@ $RECYCLE.BIN/
 /CVS/*
 **/CVS/*
 
+# Node
+node_modules
+dist
+
 # Exceptions
 !.editorconfig
+!.eslintignore
+!.eslintrc
