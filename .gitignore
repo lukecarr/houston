@@ -103,6 +103,7 @@ dist
 coverage
 
 # Exceptions
+!.circleci
 !.commitlintrc
 !.editorconfig
 !.eslintignore

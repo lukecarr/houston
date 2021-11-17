@@ -1,0 +1,18 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@4.7
+  code-climate: travelaudience/code-climate@0.1.2
+
+workflows:
+  Unit Tests:
+    jobs:
+      - node/test:
+          version: '16.10'
+          pkg-manager: yarn
+          post-steps:
+            - code-climate/install
+            - code-climate/format_coverage:
+                coverage_file: coverage/clover.xml
+                input_type: clover
+            - code-climate/upload_coverage
