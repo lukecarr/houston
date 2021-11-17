@@ -105,3 +105,4 @@ dist
 !.editorconfig
 !.eslintignore
 !.eslintrc
+!.husky
