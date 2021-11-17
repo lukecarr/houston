@@ -1,0 +1,16 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "name": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "publisher": "Transworld"
+    },
+    {
+      "id": "2",
+      "name": "Harry Potter and the Deathly Hallows",
+      "author": "J.K. Rowling",
+      "publisher": "Bloomsbury"
+    }
+  ]
+}
