@@ -102,7 +102,9 @@ node_modules
 dist
 
 # Exceptions
+!.commitlintrc
 !.editorconfig
 !.eslintignore
 !.eslintrc
 !.husky
+!.lintstagedrc
