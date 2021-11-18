@@ -43,9 +43,7 @@ export const mime = 'application/problem+json'
  * @param err The error details to send.
  */
 export function withError (res: ServerResponse, err: Partial<Error>): void {
-  if (typeof err.status !== 'undefined') {
-    res.statusCode = err.status
-  }
+  err.status && (res.statusCode = err.status)
   return res.setHeader('Content-Type', mime).end(JSON.stringify(err))
 }
 
