@@ -44,7 +44,8 @@ export const mime = 'application/problem+json'
  */
 export function withError (res: ServerResponse, err: Partial<HoustonError>): void {
   err.status && (res.statusCode = err.status)
-  return res.setHeader('Content-Type', mime).end(JSON.stringify(err))
+  res.setHeader('Content-Type', mime)
+  res.end(JSON.stringify(err))
 }
 
 /**

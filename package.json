@@ -24,6 +24,9 @@
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": ">=10.24"
+  },
   "scripts": {
     "build": "siroc build",
     "changelog": "gitmoji-changelog",
