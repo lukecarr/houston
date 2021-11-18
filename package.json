@@ -1,6 +1,6 @@
 {
   "name": "@moducate/houston",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "RFC 7807 compliant errors for Node.js",
   "keywords": [
     "problem-details",

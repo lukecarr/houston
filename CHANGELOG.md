@@ -1,5 +1,27 @@
 # Changelog
 
+<a name="0.2.1"></a>
+## 0.2.1 (2021-11-18)
+
+### Added
+
+- ✅ Added tests for full coverage [[52353b5](https://github.com/moducate/houston/commit/52353b581d5e46f941d92d3e1d4ab775595c3172)]
+
+### Changed
+
+- ♻️ Refactored to save 8 bytes [[1886edb](https://github.com/moducate/houston/commit/1886edbff809df2927b5a297f8e3f7829001ae50)]
+
+### Fixed
+
+- 🐛 Fixed Error type&#x27;s name clashing [[ab8d044](https://github.com/moducate/houston/commit/ab8d04497a113d4f4481cd1caf6c1d1c5f6fca9f)]
+
+### Miscellaneous
+
+- 🔨 Added size-limit with 500 B limit [[a7586a4](https://github.com/moducate/houston/commit/a7586a4667f7cf2d1820bb0fd7ebf61c88eb74ce)]
+- 📝 Updated bundle shields.io to show zipped size [[e537523](https://github.com/moducate/houston/commit/e537523a58ba4ba1d85787959a9d3235354ffc33)]
+- 📝 Updated bundle size in README [[8ff1ffd](https://github.com/moducate/houston/commit/8ff1ffdb3fcb3ac91d4e0b6ada9aa0e2adc33245)]
+
+
 <a name="0.2.0"></a>
 ## 0.2.0 (2021-11-17)
 
