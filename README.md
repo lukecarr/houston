@@ -1,6 +1,6 @@
-# ⚠ Houston
+# Houston
 
-> RFC 7807 compliant errors for Node.js
+> ⚠ RFC 7807 compliant errors for Node.js
 
 [![npm](https://img.shields.io/npm/v/@moducate/houston?color=blue)](https://npmjs.com/package/@moducate/houston)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/@moducate/houston)](https://bundlephobia.com/package/moducate/houston)
