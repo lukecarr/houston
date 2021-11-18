@@ -14,6 +14,7 @@
 - 🐁 **Tiny.** Total bundle size comes in at [< 300B minified + gzipped](https://bundlephobia.com/package/moducate/houston)!
 - 💡 **Lightweight.** Tiny (see above), zero dependencies, and tree-shakeable!
 - 💪 **TypeScript.** Fully typed and self-documenting!
+- 🎉 **Support for Node.js >=10.24!**
 
 ## 🚀 Quick Start
 
