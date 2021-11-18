@@ -1,0 +1,8 @@
+{
+  "name": "fastify",
+  "private": true,
+  "dependencies": {
+    "fastify": "^3.24.0",
+    "@moducate/houston": "../.."
+  }
+}

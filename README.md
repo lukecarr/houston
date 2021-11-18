@@ -36,31 +36,6 @@ import { withError } from "@moducate/houston";
 const { withError } = require("@moducate/houston");
 ```
 
-## 💡 Examples
-
-> 📁 Full source code for these examples can be found in the `examples` directory.
-
-### Express
-
-```js
-const { withError } = require("@moducate/houston");
-const app = require("express")();
-
-app.get("/not-found", (_, res) => {
-  return withError(res, { type: "https://example.com/not-found", status: 404 });
-});
-```
-
-### Next.js API Routes
-
-```js
-import { withError } from "@moducate/houston";
-
-export default function handler(req, res) {
-  return withError(res, { type: "https://example.com/not-found", status: 404 });
-}
-```
-
 ## 📄 Templates
 
 You can create error templates using the exported `withTemplate` function:
@@ -88,6 +63,46 @@ console.log(mime);
 ```
 
 This is what the `Content-Type` header of the response supplied to `withError` is set to.
+
+## 💡 Examples
+
+> 📁 Full source code for these examples can be found in the `examples` directory.
+
+### Express
+
+```js
+const { withError } = require("@moducate/houston");
+const app = require("express")();
+
+app.get("/not-found", (_, res) => {
+  return withError(res, { type: "https://example.com/not-found", status: 404 });
+});
+```
+
+### Next.js API Routes
+
+```js
+import { withError } from "@moducate/houston";
+
+export default function handler(req, res) {
+  return withError(res, { type: "https://example.com/not-found", status: 404 });
+}
+```
+
+### Fastify
+
+> ⚠ Fastify uses a custom `Reply` class, rather than `http.ServerResponse`.
+>
+> This means you need to supply `reply.raw` (instead of `reply`) to `withError()`.
+
+```js
+const { withError } = require("@moducate/houston");
+const app = require("fastify")();
+
+app.get("/not-found", (_, reply) => {
+  return withError(reply.raw, { type: "https://example.com/not-found", status: 404 });
+});
+```
 
 ## ⚖ License
 
