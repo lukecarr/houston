@@ -15,7 +15,7 @@ const books = [
   }
 ]
 
-export default function handler({ query }, res) {
+export default function handler ({ query }, res) {
   const book = books.find(x => x.id === query.id)
   if (book) {
     return res.json(book)

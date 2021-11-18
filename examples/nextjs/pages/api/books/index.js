@@ -1,5 +1,5 @@
-import { books } from "../../../data/books.json"
+import { books } from '../../../data/books.json'
 
-export default function handler(_, res) {
+export default function handler (_, res) {
   return res.json(books)
 }
