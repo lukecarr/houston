@@ -24,9 +24,6 @@
   "files": [
     "dist"
   ],
-  "engines": {
-    "node": ">=10.24"
-  },
   "scripts": {
     "build": "siroc build",
     "changelog": "gitmoji-changelog",
@@ -59,6 +56,9 @@
     "size-limit": "^7.0.0",
     "ts-jest": "^27.0.7",
     "typescript": "^4.4.4"
+  },
+  "engines": {
+    "node": ">=10.24"
   },
   "size-limit": [
     {

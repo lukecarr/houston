@@ -54,8 +54,10 @@ export function withError (res: ServerResponse, err: Partial<HoustonError>): voi
  *
  * @param template The template's values.
  * @returns A `withError` function which can be invoked to apply the error
- * template to a `http.ServerResponse` object.
+ * template to a `http.ServerResponse` object, and a `raw` function to
+ * generate a plain object from the template (without touching the `http`
+ * module).
  */
-export function withTemplate (template: Partial<HoustonError>): (res: ServerResponse, err?: Partial<HoustonError>) => void {
-  return (res, err) => withError(res, { ...template, ...err })
+export function withTemplate (template: Partial<HoustonError>): [(res: ServerResponse, err?: Partial<HoustonError>) => void, (err?: Partial<HoustonError>) => Partial<HoustonError>] {
+  return [(res, err) => withError(res, { ...template, ...err }), err => ({ ...template, ...err })]
 }
