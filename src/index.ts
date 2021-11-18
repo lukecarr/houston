@@ -3,7 +3,7 @@ import type { ServerResponse } from 'http'
 /**
  * An RFC 7807 compliant error.
  */
-export type Error = {
+export type HoustonError = {
   /**
    * A URI reference that identifies the problem type.
    */
@@ -42,7 +42,7 @@ export const mime = 'application/problem+json'
  * @param res The `http.ServerResponse` object to send the error to.
  * @param err The error details to send.
  */
-export function withError (res: ServerResponse, err: Partial<Error>): void {
+export function withError (res: ServerResponse, err: Partial<HoustonError>): void {
   err.status && (res.statusCode = err.status)
   return res.setHeader('Content-Type', mime).end(JSON.stringify(err))
 }
@@ -55,6 +55,6 @@ export function withError (res: ServerResponse, err: Partial<Error>): void {
  * @returns A `withError` function which can be invoked to apply the error
  * template to a `http.ServerResponse` object.
  */
-export function withTemplate (template: Partial<Error>): (res: ServerResponse, err?: Partial<Error>) => void {
+export function withTemplate (template: Partial<HoustonError>): (res: ServerResponse, err?: Partial<HoustonError>) => void {
   return (res, err) => withError(res, { ...template, ...err })
 }
