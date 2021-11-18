@@ -9,8 +9,9 @@
 [![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/@moducate/houston)](#)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/@moducate/houston)](https://bundlephobia.com/package/moducate/houston)
 
-- 📃 **Fully compliant.** Fully compliant with the [RFC 7807 specification](https://datatracker.ietf.org/doc/html/rfc7807).
-- 💡 **Lightweight.** Total bundle size comes in at [< 300B minified + gzipped](https://bundlephobia.com/package/moducate/houston).
+- 📃 **Fully compliant.** Fully compliant with the [RFC 7807 specification](https://datatracker.ietf.org/doc/html/rfc7807)!
+- 🐁 **Tiny.** Total bundle size comes in at [< 300B minified + gzipped](https://bundlephobia.com/package/moducate/houston)!
+- 💡 **Lightweight.** Tiny (see above), zero dependencies, and tree-shakeable!
 - 💪 **TypeScript.** Fully typed and self-documenting!
 
 ## 🚀 Quick Start
