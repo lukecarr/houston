@@ -2,11 +2,11 @@
 
 > RFC 7807 compliant errors for Node.js
 
-[![npm](https://img.shields.io/npm/v/@moducate/houston)](https://npmjs.com/package/@moducate/houston)
+[![npm](https://img.shields.io/npm/v/@moducate/houston?color=blue)](https://npmjs.com/package/@moducate/houston)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@moducate/houston)](https://bundlephobia.com/package/moducate/houston)
 [![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/moducate/houston)](https://codeclimate.com/github/moducate/houston)
 [![Code Climate coverage](https://img.shields.io/codeclimate/coverage/moducate/houston)](https://codeclimate.com/github/moducate/houston)
 [![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/@moducate/houston)](#)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@moducate/houston)](https://bundlephobia.com/package/moducate/houston)
 
 - 📃 **Fully compliant.** Fully compliant with the [RFC 7807 specification](https://datatracker.ietf.org/doc/html/rfc7807)!
 - 🐁 **Tiny.** Total bundle size comes in at [< 300B minified + gzipped](https://bundlephobia.com/package/moducate/houston)!
