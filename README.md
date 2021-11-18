@@ -35,9 +35,11 @@ import { withError } from "@moducate/houston";
 const { withError } = require("@moducate/houston");
 ```
 
-### Example Usage
+## 💡 Examples
 
-Transform an `express` response:
+> 📁 Full source code for these examples can be found in the `examples` directory.
+
+### Express
 
 ```js
 const { withError } = require("@moducate/houston");
@@ -46,6 +48,16 @@ const app = require("express")();
 app.get("/not-found", (_, res) => {
   return withError(res, { type: "https://example.com/not-found", status: 404 });
 });
+```
+
+### Next.js API Routes
+
+```js
+import { withError } from "@moducate/houston";
+
+export default function handler(req, res) {
+  return withError(res, { type: "https://example.com/not-found", status: 404 });
+}
 ```
 
 ## 📄 Templates
