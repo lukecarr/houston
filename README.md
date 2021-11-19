@@ -4,11 +4,11 @@
 
 [![npm](https://img.shields.io/npm/v/@moducate/houston?color=blue)](https://npmjs.com/package/@moducate/houston)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/@moducate/houston)](https://bundlephobia.com/package/moducate/houston)
-[![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/moducate/houston)](https://codeclimate.com/github/moducate/houston)
-[![Code Climate coverage](https://img.shields.io/codeclimate/coverage/moducate/houston)](https://codeclimate.com/github/moducate/houston)
-[![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/@moducate/houston)](#)
-[![Dependencies](https://img.shields.io/badge/dependencies-0-success)](https://www.npmjs.com/package/@moducate/houston?activeTab=dependencies)
-[![Tree-shakeable](https://img.shields.io/badge/esm-tree--shakeable-success)](#)
+[![npm install size](https://packagephobia.com/badge?p=@moducate/houston)](https://packagephobia.com/result?p=@moducate/houston)
+[![maintainability](https://img.shields.io/codeclimate/maintainability/moducate/houston)](https://codeclimate.com/github/moducate/houston)
+[![code coverage](https://img.shields.io/codeclimate/coverage/moducate/houston)](https://codeclimate.com/github/moducate/houston)
+![vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/@moducate/houston)
+[![dependencies](https://img.shields.io/badge/dependencies-0-success)](https://www.npmjs.com/package/@moducate/houston?activeTab=dependencies)
 
 - 📋 **Fully compliant.** Fully compliant with the [RFC 7807 specification](https://datatracker.ietf.org/doc/html/rfc7807)!
 - ⚙ **Configurable.** Supports [custom JSON stringify functions](#optionsstringify)!
