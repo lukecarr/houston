@@ -32,6 +32,39 @@
     "prepack": "yarn build",
     "test": "jest"
   },
+  "simple-git-hooks": {
+    "pre-commit": "npx --no-install lint-staged && npx --no-install yaspeller README.md",
+    "commit-msg": "npx --no-install commitlint --edit"
+  },
+  "commitlint": {
+    "extends": [
+      "gitmoji"
+    ],
+    "rules": {
+      "type-empty": [
+        0
+      ],
+      "subject-empty": [
+        0
+      ]
+    }
+  },
+  "lint-staged": {
+    "{src,test}/**/*.ts": [
+      "eslint --fix"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "@nuxtjs/eslint-config-typescript"
+    ],
+    "rules": {
+      "no-redeclare": "off",
+      "@typescript-eslint/no-redeclare": [
+        "error"
+      ]
+    }
+  },
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
@@ -60,10 +93,6 @@
   },
   "engines": {
     "node": ">=10.24"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npx --no-install lint-staged && npx --no-install yaspeller README.md",
-    "commit-msg": "npx --no-install commitlint --edit"
   },
   "size-limit": [
     {

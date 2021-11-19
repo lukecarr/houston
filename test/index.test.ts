@@ -36,21 +36,21 @@ describe('withError', () => {
       type: 'object',
       properties: {
         type: {
-          type: 'string',
+          type: 'string'
         },
         title: {
-          type: 'string',
+          type: 'string'
         },
         status: {
-          type: 'number',
+          type: 'number'
         },
         detail: {
-          type: 'string',
+          type: 'string'
         },
         instance: {
-          type: 'string',
-        },
-      },
+          type: 'string'
+        }
+      }
     })
 
     const res = new MockRes()

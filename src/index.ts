@@ -37,7 +37,7 @@ export type HoustonError = {
 export type Options = {
   /**
    * The function used to convert the JSON response body into a string.
-   * 
+   *
    * By default, `JSON.stringify` is used.
    */
   stringify: (value: any) => string
@@ -73,6 +73,6 @@ export function withError (res: ServerResponse, err: Partial<HoustonError>, opts
  * generate a plain object from the template (without touching the `http`
  * module).
  */
-export function withTemplate <T = {}>(template: (params: T) => Partial<HoustonError>, opts?: Partial<Options>): [(res: ServerResponse, params: T) => void, (params: T) => Partial<HoustonError>] {
+export function withTemplate <T = {}> (template: (params: T) => Partial<HoustonError>, opts?: Partial<Options>): [(res: ServerResponse, params: T) => void, (params: T) => Partial<HoustonError>] {
   return [(res, params) => withError(res, { ...template(params) }, { ...opts }), params => ({ ...template(params) })]
 }
