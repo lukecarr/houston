@@ -1,0 +1,9 @@
+{
+  "name": "fast-json-stringify",
+  "private": true,
+  "dependencies": {
+    "@moducate/houston": "../..",
+    "fast-json-stringify": "^2.7.12",
+    "fastify": "^3.24.0"
+  }
+}

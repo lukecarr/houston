@@ -149,6 +149,10 @@ app.get("/not-found", (_, reply) => {
 });
 ```
 
+### fast-json-stringify
+
+See the `examples/fast-json-stringify` directory for an example project using Houston with Fastify and fast-json-stringify.
+
 ## ⚖ License
 
 Houston is licensed under the [`MIT License`](LICENSE).
