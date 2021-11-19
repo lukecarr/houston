@@ -15,6 +15,7 @@
 - 💡 **Lightweight.** Tiny (see above), zero dependencies, and tree-shakeable!
 - 💪 **TypeScript.** Fully typed and self-documenting!
 - 🎉 **Support for Node.js >=10.24!**
+- ⚙ **Configurable.** Supports [custom JSON stringify functions](#optionsstringify)
 
 ## 🚀 Quick Start
 
