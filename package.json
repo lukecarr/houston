@@ -71,7 +71,14 @@
       "src/**/*.ts"
     ],
     "preset": "ts-jest",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "reporters": [
+      "default",
+      "jest-junit"
+    ]
+  },
+  "jest-junit": {
+    "outputDirectory": ".jest"
   },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
@@ -83,6 +90,7 @@
     "fast-json-stringify": "^2.7.12",
     "gitmoji-changelog": "^2.2.1",
     "jest": "^27.3.1",
+    "jest-junit": "^13.0.0",
     "lint-staged": "^12.0.2",
     "simple-git-hooks": "^2.7.0",
     "siroc": "^0.16.0",
