@@ -1,5 +1,46 @@
 # Changelog
 
+<a name="1.0.0"></a>
+## 1.0.0 (2021-11-19)
+
+### Breaking Changes
+
+- 💥 Changed template functionality to support params [[8429209](https://github.com/moducate/houston/commit/84292099231ed8e85a23144a5fdd0c61c3ddb71b)]
+- 💥 Changed withTemplate to return tuple for raw error generation [[307267d](https://github.com/moducate/houston/commit/307267db5b04303c61d92cd5d703e2dd305da3dc)]
+
+### Added
+
+- ✨ Added support for custom stringify functions [[a1e9c92](https://github.com/moducate/houston/commit/a1e9c92dc12d36cd2fc8059fd0e0b2ea79a8ed4b)]
+- ✨ Added support for Node &gt;&#x3D;10.24 [[76ceabb](https://github.com/moducate/houston/commit/76ceabb88a0eba42fa3c7c9b05ac9c60f52a3cee)]
+
+### Changed
+
+- 🚨 Fixed ESLint warnings [[6d2c448](https://github.com/moducate/houston/commit/6d2c448d6583a8d99ffc083bd65fcdf61c462511)]
+
+### Fixed
+
+- ✏️ Missing punctuation in README [[fff4aef](https://github.com/moducate/houston/commit/fff4aef9afb11b6fccd1fa482734240e42da3b52)]
+- ✏️ Fixed typo (missing space) in README [[f788974](https://github.com/moducate/houston/commit/f788974a2c51d8af8ae8a7ce3fd37e83fedad885)]
+
+### Miscellaneous
+
+- 📄 Added templates example project [[7d5795f](https://github.com/moducate/houston/commit/7d5795f713863f7591a2bb3c41391934f0c4aa26)]
+- 📄 Added fast-json-stringify example [[7336eff](https://github.com/moducate/houston/commit/7336effe4c0897748c6d8378d820ab9db77182b4)]
+- 📝 Updated feature list in README [[a3c5a64](https://github.com/moducate/houston/commit/a3c5a643c2afdc7f5fd0f4ceb5a8a8c84e747adb)]
+- 📝 Tidied up example options code block [[08ccb00](https://github.com/moducate/houston/commit/08ccb0004c517ad242f41cbc65f0e718aceb93da)]
+- 📝 Added options docs to README [[61a2b7d](https://github.com/moducate/houston/commit/61a2b7dd1674986f0993f1a1263814cc53681d37)]
+- 🔨 Configured gitpod to install deps on init [[7a802bd](https://github.com/moducate/houston/commit/7a802bd0547d3ca676c7a0c43faedabaf8f5de40)]
+- 📝 Updated README for new templating system [[5e0e566](https://github.com/moducate/houston/commit/5e0e566e09ce33087caba8a174ee98b35c7a8573)]
+- 📝 Added supported Node.js versions to README [[ba7fce7](https://github.com/moducate/houston/commit/ba7fce7bb8f230889f5aaab6d046de5c574461a9)]
+- 📝 Added more shields.io badges [[9995d86](https://github.com/moducate/houston/commit/9995d867a44a1e0d4e2ae94a9fcbcefa85b349b4)]
+- 📝 Moved warning emoji in README [[4460f63](https://github.com/moducate/houston/commit/4460f6367c989d406efc3f1bddf27a32355197e7)]
+- 📝 Rearranged shields.io badges [[ee082b8](https://github.com/moducate/houston/commit/ee082b8d8cee9108f366472aa4541e0e7391b123)]
+- 📝 Removed broken npms.io badge [[61abfd9](https://github.com/moducate/houston/commit/61abfd95c2913354e9d105d7dc9c98abb42ed0be)]
+- 📄 Added Fastify example (with source) [[1ca4696](https://github.com/moducate/houston/commit/1ca4696113325ed868689458bd8c582207f3cef4)]
+- 📝 Added more entries to README&#x27;s features list [[89fbdb3](https://github.com/moducate/houston/commit/89fbdb33bc434d0549f1dbb9390eabb8272d5542)]
+- 📝 Added Next.js example to README [[4f4f7c7](https://github.com/moducate/houston/commit/4f4f7c72132c150b6333f768c26e9fff20214388)]
+
+
 <a name="0.2.1"></a>
 ## 0.2.1 (2021-11-18)
 
