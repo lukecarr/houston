@@ -1,7 +1,7 @@
 ![houston](https://user-images.githubusercontent.com/24438483/142631409-107a8c31-b3ea-4db9-959c-2f1c1ba5e844.png)
 
 [![npm](https://img.shields.io/npm/v/@moducate/houston?color=blue)](https://npmjs.com/package/@moducate/houston)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@moducate/houston)](https://bundlephobia.com/package/moducate/houston)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@moducate/houston?color=success)](https://bundlephobia.com/package/moducate/houston)
 [![npm install size](https://packagephobia.com/badge?p=@moducate/houston)](https://packagephobia.com/result?p=@moducate/houston)
 [![maintainability](https://img.shields.io/codeclimate/maintainability/moducate/houston)](https://codeclimate.com/github/moducate/houston)
 [![code coverage](https://img.shields.io/codeclimate/coverage/moducate/houston)](https://codeclimate.com/github/moducate/houston)
