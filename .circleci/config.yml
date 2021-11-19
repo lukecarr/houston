@@ -8,7 +8,16 @@ workflows:
   Unit Tests:
     jobs:
       - node/test:
-          version: '16.10'
+          version: '10.24'
+          pkg-manager: yarn
+      - node/test:
+          version: '12.22'
+          pkg-manager: yarn
+      - node/test:
+          version: '14.18'
+          pkg-manager: yarn
+      - node/test:
+          version: 'lts'
           pkg-manager: yarn
           post-steps:
             - code-climate/install
