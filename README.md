@@ -91,19 +91,15 @@ You can supply options as an additional parameter to `withError` and `withTempla
 returned by the template) to configure Houston's behaviour:
 
 ```js
-const { withError } = require("@moducate/houston");
-const app = require("express")();
+...
 
-app.get("/not-found", (_, res) => {
-  return withError(
-    res,
-    {
-      type: "https://example.com/not-found",
-      status: 404
-    },
-    { /* options */ },
-  );
-});
+withError(
+  res,
+  { type: "https://example.com/not-found", status: 404},
+  { /* options */ },
+);
+
+...
 ```
 
 ### `options.stringify`
