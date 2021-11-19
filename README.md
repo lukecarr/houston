@@ -95,7 +95,7 @@ returned by the template) to configure Houston's behaviour:
 
 withError(
   res,
-  { type: "https://example.com/not-found", status: 404},
+  { type: "https://example.com/not-found", status: 404 },
   { /* options */ },
 );
 
