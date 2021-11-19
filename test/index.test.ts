@@ -60,20 +60,16 @@ describe('withError', () => {
 
 describe('withTemplate', () => {
   it('should return a withError function', () => {
-    const [withNotFound] = withTemplate({ status: 404 })
+    const [withNotFound] = withTemplate(() => ({ status: 404 }))
     expect(typeof withNotFound).toStrictEqual('function')
-  })
 
-  it('should merge the defaults with the supplied error', () => {
-    const [withNotFound] = withTemplate({ status: 404 })
     const res = new MockRes()
-    withNotFound(res)
-
+    withNotFound(res, {})
     expect(res.statusCode).toStrictEqual(404)
   })
 
   it('should return a raw function', () => {
-    const [, withNotFound] = withTemplate({ status: 404 })
+    const [, withNotFound] = withTemplate<{ status: number }>(x => x)
     expect(typeof withNotFound).toStrictEqual('function')
 
     const res = withNotFound({ status: 200 })

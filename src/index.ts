@@ -62,16 +62,17 @@ export function withError (res: ServerResponse, err: Partial<HoustonError>, opts
 }
 
 /**
- * Generates an RFC 7807 compliant error template which can be invoked to
- * make errors with common values.
+ * Generates functions which can be invoked to produce errors from a
+ * predefined template.
  *
- * @param template The template's values.
+ * @param template A function which accepts the template's parameters
+ * and produces an error.
  * @param opts Additional options for Houston.
  * @returns A `withError` function which can be invoked to apply the error
  * template to a `http.ServerResponse` object, and a `raw` function to
  * generate a plain object from the template (without touching the `http`
  * module).
  */
-export function withTemplate (template: Partial<HoustonError>, opts?: Partial<Options>): [(res: ServerResponse, err?: Partial<HoustonError>, opts?: Partial<Options>) => void, (err?: Partial<HoustonError>) => Partial<HoustonError>] {
-  return [(res, err, _opts) => withError(res, { ...template, ...err }, { ...opts, ..._opts }), err => ({ ...template, ...err })]
+export function withTemplate <T = {}>(template: (params: T) => Partial<HoustonError>, opts?: Partial<Options>): [(res: ServerResponse, params: T) => void, (params: T) => Partial<HoustonError>] {
+  return [(res, params) => withError(res, { ...template(params) }, { ...opts }), params => ({ ...template(params) })]
 }

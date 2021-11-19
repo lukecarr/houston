@@ -47,18 +47,21 @@ You can create error templates using the exported `withTemplate` function:
 const { withTemplate } = require("@moducate/houston");
 const app = require("express")();
 
-const [withNotFound, rawNotFound] = withTemplate({ type: "https://example.com/not-found", status: 404 });
+const [withUserNotFound, rawUserNotFound] = withTemplate<{ userId: number }>(({ userId }) => ({
+  type: "https://example.com/user-not-found",
+  status: 404,
+  instance: `/users/${userId}`,
+}));
 
 app.get("/not-found", (_, res) => {
-  return withNotFound(res); // The second parameter is optional when using templates
+  return withUserNotFound(res, { userId: 1 });
 });
 
-const res = rawNotFound({ status: 401 });
+const res = rawUserNotFound({ userId: 1 });
 // => The second function returned by withTemplate transforms and returns an object (decoupled from http.ServerResponse)
-// => The supplied status (401) will override the template's status (404)
 
 console.log(JSON.stringify(res));
-// => { "type": "https://example.com/not-found", "status": 401 }
+// => { "type": "https://example.com/user-not-found", "status": 404, "instance": "/users/1" }
 ```
 
 If you are not needing to use both functions, you can use this handy shorthand to obtain one of them:
@@ -66,10 +69,10 @@ If you are not needing to use both functions, you can use this handy shorthand t
 ```js
 const { withTemplate } = require("@moducate/houston");
 
-const [withNotFound] = withTemplate({ type: "https://example.com/not-found", status: 404 });
+const [withNotFound] = withTemplate(() => ({ type: "https://example.com/not-found", status: 404 }));
 // => Returns the function that transforms a http.ServerResponse
 
-const [, withNotFound] = withTemplate({ type: "https://example.com/not-found", status: 404 });
+const [, withNotFound] = withTemplate(() => ({ type: "https://example.com/not-found", status: 404 }));
 // => Returns the raw function for transforming an object
 ```
 
