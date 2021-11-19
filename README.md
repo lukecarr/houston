@@ -13,7 +13,7 @@
 - 📋 **Fully compliant.** Fully compliant with the [RFC 7807 specification](https://datatracker.ietf.org/doc/html/rfc7807)!
 - ⚙ **Configurable.** Supports [custom JSON stringify functions](#optionsstringify)!
 - 📃 **Support for templating.** Create [template functions](#templates) to generate errors from parameters!
-- 🐁 **Tiny.** Total bundle size comes in at [< 300B minified + gzipped](https://bundlephobia.com/package/moducate/houston)!
+- 🐁 **Tiny.** Total bundle size comes in at [3xx bytes minified + gzipped](https://bundlephobia.com/package/moducate/houston)!
 - 💡 **Lightweight.** Tiny (see above), zero dependencies, and tree-shakeable!
 - 💪 **TypeScript.** Fully typed and self-documenting!
 - 🎉 **Support for Node.js >=10.24!**
