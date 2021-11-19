@@ -1,7 +1,7 @@
 {
   "name": "@moducate/houston",
   "version": "1.0.0",
-  "description": "RFC 7807 compliant errors for Node.js",
+  "description": "Houston, we have an application/problem+json!",
   "keywords": [
     "problem-details",
     "rfc-7807"
