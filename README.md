@@ -1,6 +1,4 @@
-# Houston
-
-> 🚨 Houston, we have an application/problem+json!
+![houston](https://user-images.githubusercontent.com/24438483/142631409-107a8c31-b3ea-4db9-959c-2f1c1ba5e844.png)
 
 [![npm](https://img.shields.io/npm/v/@moducate/houston?color=blue)](https://npmjs.com/package/@moducate/houston)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/@moducate/houston)](https://bundlephobia.com/package/moducate/houston)
@@ -177,3 +175,7 @@ See the `examples/templates` directory for an example project using Houston's te
 ## ⚖ License
 
 Houston is licensed under the [`MIT License`](LICENSE).
+
+## Attribution
+
+Houston's banner background is sourced from SVGBackgrounds.com.
