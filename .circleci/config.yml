@@ -8,9 +8,6 @@ workflows:
   Unit Tests:
     jobs:
       - node/test:
-          version: '14.18'
-          pkg-manager: yarn
-      - node/test:
           version: 'lts'
           pkg-manager: yarn
           post-steps:
@@ -20,4 +17,4 @@ workflows:
                 input_type: clover
             - code-climate/upload_coverage
             - store_test_results:
-                path: .jest
+                path: junit

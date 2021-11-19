@@ -78,7 +78,7 @@
     ]
   },
   "jest-junit": {
-    "outputDirectory": ".jest"
+    "outputDirectory": "junit"
   },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
