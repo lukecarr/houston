@@ -1,6 +1,5 @@
 # Dotfiles
 .*
-!/.gitignore
 
 # Editors
 ## IDEA
@@ -108,5 +107,7 @@ coverage
 !.editorconfig
 !.eslintignore
 !.eslintrc
+!.gitignore
+!.gitpod.yml
 !.husky
 !.lintstagedrc
