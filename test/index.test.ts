@@ -1,5 +1,6 @@
 import { ServerResponse, IncomingMessage } from 'http'
 import { Socket } from 'net'
+import fastJson from 'fast-json-stringify'
 import { mime, withError, withTemplate } from '../src'
 
 describe('mime', () => {
@@ -27,6 +28,33 @@ describe('withError', () => {
     withError(res, { status: 500 })
 
     expect(res.getHeader('Content-Type')).toStrictEqual(mime)
+  })
+
+  it('should support a custom stringify function', () => {
+    const stringify = fastJson({
+      title: 'Error',
+      type: 'object',
+      properties: {
+        type: {
+          type: 'string',
+        },
+        title: {
+          type: 'string',
+        },
+        status: {
+          type: 'number',
+        },
+        detail: {
+          type: 'string',
+        },
+        instance: {
+          type: 'string',
+        },
+      },
+    })
+
+    const res = new MockRes()
+    expect(() => withError(res, { status: 500 }, { stringify })).not.toThrowError()
   })
 })
 

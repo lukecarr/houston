@@ -48,6 +48,7 @@
     "@types/jest": "^27.0.2",
     "commitlint-config-gitmoji": "^2.2.5",
     "eslint": "^8.2.0",
+    "fast-json-stringify": "^2.7.12",
     "gitmoji-changelog": "^2.2.1",
     "husky": "^7.0.4",
     "jest": "^27.3.1",

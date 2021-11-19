@@ -31,6 +31,15 @@ export type HoustonError = {
   instance: string
 };
 
+export type Options = {
+  /**
+   * The function used to convert the JSON response body into a string.
+   * 
+   * By default, `JSON.stringify` is used.
+   */
+  stringify: (value: any) => string
+};
+
 /**
  * The MIME/media type for RFC 7807 error responses (in JSON).
  */
@@ -42,10 +51,10 @@ export const mime = 'application/problem+json'
  * @param res The `http.ServerResponse` object to send the error to.
  * @param err The error details to send.
  */
-export function withError (res: ServerResponse, err: Partial<HoustonError>): void {
+export function withError (res: ServerResponse, err: Partial<HoustonError>, opts?: Partial<Options>): void {
   err.status && (res.statusCode = err.status)
   res.setHeader('Content-Type', mime)
-  res.end(JSON.stringify(err))
+  res.end((opts?.stringify || JSON.stringify)(err))
 }
 
 /**
