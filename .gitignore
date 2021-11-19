@@ -109,5 +109,4 @@ coverage
 !.eslintrc
 !.gitignore
 !.gitpod.yml
-!.husky
 !.lintstagedrc

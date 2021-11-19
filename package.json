@@ -30,7 +30,6 @@
     "lint": "yarn lint:eslint",
     "lint:eslint": "eslint --ext .ts --fix .",
     "prepack": "yarn build",
-    "prepare": "husky install",
     "test": "jest"
   },
   "jest": {
@@ -50,16 +49,21 @@
     "eslint": "^8.2.0",
     "fast-json-stringify": "^2.7.12",
     "gitmoji-changelog": "^2.2.1",
-    "husky": "^7.0.4",
     "jest": "^27.3.1",
     "lint-staged": "^12.0.2",
+    "simple-git-hooks": "^2.7.0",
     "siroc": "^0.16.0",
     "size-limit": "^7.0.0",
     "ts-jest": "^27.0.7",
-    "typescript": "^4.4.4"
+    "typescript": "^4.4.4",
+    "yaspeller": "^8.0.0"
   },
   "engines": {
     "node": ">=10.24"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx --no-install lint-staged && npx --no-install yaspeller README.md",
+    "commit-msg": "npx --no-install commitlint --edit"
   },
   "size-limit": [
     {
@@ -67,5 +71,18 @@
       "import": "{ withError }",
       "limit": "500 B"
     }
-  ]
+  ],
+  "yaspeller": {
+    "ignoreCapitalization": true,
+    "dictionary": [
+      "templating",
+      "3xx",
+      "gzipped",
+      "generics",
+      "Fastify",
+      "js",
+      "shakeable",
+      "stringify"
+    ]
+  }
 }
