@@ -1,0 +1,8 @@
+{
+  "name": "templates",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "@moducate/houston": "../.."
+  }
+}

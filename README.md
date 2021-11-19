@@ -10,12 +10,13 @@
 [![Dependencies](https://img.shields.io/badge/dependencies-0-success)](https://www.npmjs.com/package/@moducate/houston?activeTab=dependencies)
 [![Tree-shakeable](https://img.shields.io/badge/esm-tree--shakeable-success)](#)
 
-- 📃 **Fully compliant.** Fully compliant with the [RFC 7807 specification](https://datatracker.ietf.org/doc/html/rfc7807)!
+- 📋 **Fully compliant.** Fully compliant with the [RFC 7807 specification](https://datatracker.ietf.org/doc/html/rfc7807)!
+- ⚙ **Configurable.** Supports [custom JSON stringify functions](#optionsstringify)!
+- 📃 **Support for templating.** Create [template functions](#templates) to generate errors from parameters!
 - 🐁 **Tiny.** Total bundle size comes in at [< 300B minified + gzipped](https://bundlephobia.com/package/moducate/houston)!
 - 💡 **Lightweight.** Tiny (see above), zero dependencies, and tree-shakeable!
 - 💪 **TypeScript.** Fully typed and self-documenting!
 - 🎉 **Support for Node.js >=10.24!**
-- ⚙ **Configurable.** Supports [custom JSON stringify functions](#optionsstringify)!
 
 ## 🚀 Quick Start
 
@@ -47,7 +48,7 @@ You can create error templates using the exported `withTemplate` function:
 const { withTemplate } = require("@moducate/houston");
 const app = require("express")();
 
-const [withUserNotFound, rawUserNotFound] = withTemplate<{ userId: number }>(({ userId }) => ({
+const [withUserNotFound, rawUserNotFound] = withTemplate(({ userId }) => ({
   type: "https://example.com/user-not-found",
   status: 404,
   instance: `/users/${userId}`,
@@ -74,6 +75,19 @@ const [withNotFound] = withTemplate(() => ({ type: "https://example.com/not-foun
 
 const [, withNotFound] = withTemplate(() => ({ type: "https://example.com/not-found", status: 404 }));
 // => Returns the raw function for transforming an object
+```
+
+### 💪 TypeScript
+
+`withTemplate` supports TypeScript generics so you can have type definitions for your template's parameters:
+
+```ts
+const [withUserNotFound] = withTemplate<{ userId: number }>(({ userId }) => ({
+  type: "https://example.com/user-not-found",
+  status: 404,
+  instance: `/users/${userId}`,
+}));
+// => withUserNotFound's second parameter (`params`) now has the type `{ userId: number }`
 ```
 
 ## 🏷 MIME Type
@@ -155,6 +169,10 @@ app.get("/not-found", (_, reply) => {
 ### fast-json-stringify
 
 See the `examples/fast-json-stringify` directory for an example project using Houston with Fastify and fast-json-stringify.
+
+### Templates
+
+See the `examples/templates` directory for an example project using Houston's templating functionality with Express.
 
 ## ⚖ License
 
