@@ -31,6 +31,9 @@ export type HoustonError = {
   instance: string
 };
 
+/**
+ * Options to configure Houston's behaviour.
+ */
 export type Options = {
   /**
    * The function used to convert the JSON response body into a string.
@@ -50,6 +53,7 @@ export const mime = 'application/problem+json'
  *
  * @param res The `http.ServerResponse` object to send the error to.
  * @param err The error details to send.
+ * @param opts Additional options for Houston.
  */
 export function withError (res: ServerResponse, err: Partial<HoustonError>, opts?: Partial<Options>): void {
   err.status && (res.statusCode = err.status)
@@ -62,11 +66,12 @@ export function withError (res: ServerResponse, err: Partial<HoustonError>, opts
  * make errors with common values.
  *
  * @param template The template's values.
+ * @param opts Additional options for Houston.
  * @returns A `withError` function which can be invoked to apply the error
  * template to a `http.ServerResponse` object, and a `raw` function to
  * generate a plain object from the template (without touching the `http`
  * module).
  */
-export function withTemplate (template: Partial<HoustonError>): [(res: ServerResponse, err?: Partial<HoustonError>) => void, (err?: Partial<HoustonError>) => Partial<HoustonError>] {
-  return [(res, err) => withError(res, { ...template, ...err }), err => ({ ...template, ...err })]
+export function withTemplate (template: Partial<HoustonError>, opts?: Partial<Options>): [(res: ServerResponse, err?: Partial<HoustonError>, opts?: Partial<Options>) => void, (err?: Partial<HoustonError>) => Partial<HoustonError>] {
+  return [(res, err, _opts) => withError(res, { ...template, ...err }, { ...opts, ..._opts }), err => ({ ...template, ...err })]
 }

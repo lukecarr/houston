@@ -85,6 +85,33 @@ console.log(mime);
 
 This is what the `Content-Type` header of the response supplied to `withError` is set to.
 
+## ⚙ Options
+
+You can supply options as an additional parameter to `withError` and `withTemplate` (and the subsequent `withError` function
+returned by the template) to configure Houston's behaviour:
+
+```js
+const { withError } = require("@moducate/houston");
+const app = require("express")();
+
+app.get("/not-found", (_, res) => {
+  return withError(
+    res,
+    {
+      type: "https://example.com/not-found",
+      status: 404
+    },
+    { /* options */ },
+  );
+});
+```
+
+### `options.stringify`
+
+You can supply a custom function used to stringify the error response's JSON body.
+
+> By default, `JSON.stringify` is used.
+
 ## 💡 Examples
 
 > 📁 Full source code for these examples can be found in the `examples` directory.
