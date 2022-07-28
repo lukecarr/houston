@@ -97,7 +97,7 @@
     "size-limit": "^7.0.0",
     "ts-jest": "^27.0.7",
     "typescript": "^4.4.4",
-    "yaspeller": "^8.0.0"
+    "yaspeller": "8.0.1"
   },
   "engines": {
     "node": ">=10.24"
