@@ -91,7 +91,7 @@
     "gitmoji-changelog": "^2.2.1",
     "jest": "^27.3.1",
     "jest-junit": "^13.0.0",
-    "lint-staged": "^12.0.2",
+    "lint-staged": "12.5.0",
     "simple-git-hooks": "^2.7.0",
     "siroc": "^0.16.0",
     "size-limit": "^7.0.0",
