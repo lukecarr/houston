@@ -119,7 +119,9 @@
       "Fastify",
       "js",
       "shakeable",
-      "stringify"
+      "stringify",
+      "sourced",
+      "SVGBackgrounds"
     ]
   }
 }
