@@ -2,7 +2,7 @@ version: 2.1
 
 orbs:
   node: circleci/node@4.9.0
-  code-climate: travelaudience/code-climate@0.1.2
+  code-climate: travelaudience/code-climate@0.1.5
 
 workflows:
   Unit Tests:
