@@ -86,7 +86,7 @@
     "@size-limit/preset-small-lib": "^7.0.0",
     "@types/jest": "^27.0.2",
     "commitlint-config-gitmoji": "^2.2.5",
-    "eslint": "^8.2.0",
+    "eslint": "8.25.0",
     "fast-json-stringify": "^2.7.12",
     "gitmoji-changelog": "^2.2.1",
     "jest": "^27.3.1",
