@@ -132,7 +132,8 @@
       "js",
       "shakeable",
       "stringify",
-      "integrable"
+      "integrable",
+      "Cloudflare"
     ]
   }
 }
