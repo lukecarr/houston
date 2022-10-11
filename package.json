@@ -6,16 +6,20 @@
     "problem-details",
     "rfc-7807"
   ],
-  "homepage": "https://github.com/moducate/houston#readme",
-  "bugs": "https://github.com/moducate/houston/issues",
-  "repository": "moducate/houston",
+  "homepage": "https://github.com/lukecarr/houston#readme",
+  "bugs": "https://github.com/lukecarr/houston/issues",
+  "repository": "lukecarr/houston",
   "license": "MIT",
-  "author": "Luke Carr <luke@moducate.app>",
+  "author": "Luke Carr <me+oss@carr.sh>",
   "sideEffects": false,
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
+    },
+    "./nextjs": {
+      "import": "./dist/nextjs.mjs",
+      "require": "./dist/nextjs.cjs"
     }
   },
   "main": "dist/index.cjs",
@@ -94,6 +98,7 @@
     "jest": "^29.1.2",
     "jest-junit": "^14.0.1",
     "lint-staged": "^13.0.3",
+    "next": "12.3.1",
     "simple-git-hooks": "^2.7.0",
     "siroc": "^0.16.0",
     "size-limit": "^8.1.0",
