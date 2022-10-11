@@ -24,6 +24,10 @@
     "./cf-workers": {
       "import": "./dist/cf-workers.mjs",
       "require": "./dist/cf-workers.cjs"
+    },
+    "./netlify": {
+      "import": "./dist/netlify.mjs",
+      "require": "./dist/netlify.cjs"
     }
   },
   "main": "dist/index.cjs",
@@ -88,6 +92,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "3.16.0",
     "@commitlint/cli": "17.1.2",
+    "@netlify/functions": "1.3.0",
     "@nuxtjs/eslint-config-typescript": "11.0.0",
     "@size-limit/preset-small-lib": "8.1.0",
     "@types/jest": "29.1.2",
@@ -133,7 +138,8 @@
       "shakeable",
       "stringify",
       "integrable",
-      "Cloudflare"
+      "Cloudflare",
+      "Netlify"
     ]
   }
 }
