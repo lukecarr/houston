@@ -127,8 +127,7 @@
       "js",
       "shakeable",
       "stringify",
-      "sourced",
-      "SVGBackgrounds"
+      "integrable"
     ]
   }
 }

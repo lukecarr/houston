@@ -1,4 +1,6 @@
-![houston](https://user-images.githubusercontent.com/24438483/142631409-107a8c31-b3ea-4db9-959c-2f1c1ba5e844.png)
+# Houston
+
+> 🚨 We have an application/problem+json!
 
 [![npm](https://img.shields.io/npm/v/@moducate/houston?color=blue)](https://npmjs.com/package/@moducate/houston)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/@moducate/houston?color=success)](https://bundlephobia.com/package/moducate/houston)
@@ -9,10 +11,11 @@
 [![dependencies](https://img.shields.io/badge/dependencies-0-success)](https://www.npmjs.com/package/@moducate/houston?activeTab=dependencies)
 
 - 📋 **Fully compliant.** Fully compliant with the [RFC 7807 specification](https://datatracker.ietf.org/doc/html/rfc7807)!
-- ⚙ **Configurable.** Supports [custom JSON stringify functions](#optionsstringify)!
+- 🛠 **Configurable.** Supports [custom JSON stringify functions](#optionsstringify)!
 - 📃 **Support for templating.** Create [template functions](#templates) to generate errors from parameters!
 - 🐁 **Tiny.** Total bundle size comes in at [3xx bytes minified + gzipped](https://bundlephobia.com/package/moducate/houston)!
 - 💡 **Lightweight.** Tiny (see above), zero dependencies, and tree-shakeable!
+- 🤝 **Integrable.** Works with [Next.js API routes](https://nextjs.org/docs/api-routes/introduction) out-of-the-box!
 - 💪 **TypeScript.** Fully typed and self-documenting!
 - 🎉 **Support for Node.js >=10.24!**
 
@@ -175,7 +178,3 @@ See the `examples/templates` directory for an example project using Houston's te
 ## ⚖ License
 
 Houston is licensed under the [`MIT License`](LICENSE).
-
-## Attribution
-
-Houston's banner background is sourced from SVGBackgrounds.com.
