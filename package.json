@@ -75,14 +75,11 @@
       "src/**/*.ts"
     ],
     "preset": "ts-jest",
-    "testEnvironment": "node",
     "reporters": [
       "default",
       "jest-junit"
-    ]
-  },
-  "jest-junit": {
-    "outputDirectory": "junit"
+    ],
+    "testEnvironment": "node"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
@@ -108,6 +105,9 @@
   },
   "engines": {
     "node": ">=10.24"
+  },
+  "jest-junit": {
+    "outputDirectory": "junit"
   },
   "size-limit": [
     {

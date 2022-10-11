@@ -1,4 +1,4 @@
-import { withError } from '@moducate/houston'
+import { withError } from '@moducate/houston/nextjs'
 
 const books = [
   {
@@ -15,15 +15,14 @@ const books = [
   }
 ]
 
-export default function handler ({ query }, res) {
-  const book = books.find(x => x.id === query.id)
+export default function handler (req, res) {
+  const book = books.find(x => x.id ===req. query.id)
   if (book) {
     return res.json(book)
   }
-  return withError(res, {
+  return withError(req, res, {
     type: 'https://express.example.com/not-found',
     status: 404,
-    instance: `/books/${query.id}`,
     title: 'Book not found.',
     detail: `No book was found with the ID '${query.id}'.`
   })
