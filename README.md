@@ -15,7 +15,7 @@
 - 📃 **Support for templating.** Create [template functions](#templates) to generate errors from parameters!
 - 🐁 **Tiny.** Total bundle size comes in at [3xx bytes minified + gzipped](https://bundlephobia.com/package/moducate/houston)!
 - 💡 **Lightweight.** Tiny (see above), zero dependencies, and tree-shakeable!
-- 🤝 **Integrable.** Works with [Next.js API routes](https://nextjs.org/docs/api-routes/introduction) and [Cloudflare Workers](https://workers.cloudflare.com) out-of-the-box!
+- 🤝 **Integrable.** Works with [Next.js API routes](https://nextjs.org/docs/api-routes/introduction), [Cloudflare Workers](https://workers.cloudflare.com), and [Netlify Functions](https://www.netlify.com/products/functions/) out-of-the-box!
 - 💪 **TypeScript.** Fully typed and self-documenting!
 - 🎉 **Support for Node.js >=10.24!**
 
