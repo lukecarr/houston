@@ -104,7 +104,7 @@ console.log(mime);
 
 This is what the `Content-Type` header of the response supplied to `withError` is set to.
 
-## ⚙ Options
+## 🛠 Options
 
 You can supply options as an additional parameter to `withError` and `withTemplate` (and the subsequent `withError` function
 returned by the template) to configure Houston's behaviour:
@@ -145,11 +145,34 @@ app.get("/not-found", (_, res) => {
 ### Next.js API Routes
 
 ```js
-import { withError } from "@moducate/houston";
+import { withError } from "@moducate/houston/nextjs";
 
 export default function handler(req, res) {
-  return withError(res, { type: "https://example.com/not-found", status: 404 });
+  return withError(req, res, { type: "https://example.com/not-found", status: 404 });
 }
+```
+
+### Cloudflare Workers
+
+```js
+import { withError } from "@moducate/houston/cf-workers";
+
+addEventListener("fetch", event => {
+  return withError(event, { type: "https://example.com/not-found", status: 404 });
+});
+```
+
+### Netlify Functions
+
+```ts
+import { withError } from "@moducate/houston/netlify";
+import type { Handler } from "@netlify/functions";
+
+const handler: Handler = async (event, context) => {
+  return withError(event, { type: "https://example.com/not-found", status: 404 });
+};
+
+export { handler };
 ```
 
 ### Fastify
