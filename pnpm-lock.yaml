@@ -17,7 +17,7 @@ specifiers:
   jest-junit: 14.0.1
   lint-staged: 13.0.3
   next: 12.3.1
-  simple-git-hooks: 2.8.0
+  simple-git-hooks: 2.11.1
   siroc: 0.16.0
   size-limit: 8.1.0
   ts-jest: 29.0.3
@@ -41,7 +41,7 @@ devDependencies:
   jest-junit: 14.0.1
   lint-staged: 13.0.3
   next: 12.3.1
-  simple-git-hooks: 2.8.0
+  simple-git-hooks: 2.11.1
   siroc: 0.16.0
   size-limit: 8.1.0
   ts-jest: 29.0.3_2gcdg7c5hzdfd67o3khlosdlhu
@@ -7211,8 +7211,8 @@ packages:
       pkg-conf: 2.1.0
     dev: true
 
-  /simple-git-hooks/2.8.0:
-    resolution: {integrity: sha512-ocmZQORwa6x9mxg+gVIAp5o4wXiWOHGXyrDBA0+UxGKIEKOyFtL4LWNKkP/2ornQPdlnlDGDteVeYP5FjhIoWA==}
+  /simple-git-hooks/2.11.1:
+    resolution: {integrity: sha512-tgqwPUMDcNDhuf1Xf6KTUsyeqGdgKMhzaH4PAZZuzguOgTl5uuyeYe/8mWgAr6IBxB5V06uqEf6Dy37gIWDtDg==}
     hasBin: true
     requiresBuild: true
     dev: true
