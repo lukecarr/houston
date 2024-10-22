@@ -96,7 +96,7 @@
     "@nuxtjs/eslint-config-typescript": "11.0.0",
     "@size-limit/preset-small-lib": "8.1.0",
     "@types/jest": "29.1.2",
-    "@types/node": "18.8.4",
+    "@types/node": "18.19.58",
     "commitlint": "17.1.2",
     "commitlint-config-gitmoji": "2.2.6",
     "eslint": "8.25.0",
